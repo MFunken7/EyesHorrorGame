@@ -18,13 +18,6 @@ public class PlayerController : MonoBehaviour
         rb = player.GetComponent<Rigidbody>();
     }
 
-    private void Update()
-    {
-        
-       
-
-    }
-
     private void OnMove(InputValue value)
     {
         Vector2 input = value.Get<Vector2>();
@@ -40,11 +33,6 @@ public class PlayerController : MonoBehaviour
         //rb.AddForce(finalMove, ForceMode.Force);
         //player.transform.Translate(force);
         //rb.MovePosition(finalMove);
-    }
-
-    private void OnInteract()
-    {
-        Debug.Log("interact");
     }
 
     private void OnSleep()

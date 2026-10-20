@@ -42,7 +42,7 @@
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "PressAndRepeat(repeatTime=1)",
                     "initialStateCheck": false,
                     "priority": 0
                 },
@@ -63,6 +63,16 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "InteractCancel",
+                    "type": "Button",
+                    "id": "7d2440c8-c45a-4f76-ac2a-b5f4079ee7fb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": false,
                     "priority": 0
                 }
@@ -329,6 +339,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c3d47d9-89b8-4240-bdae-47b5951cabd9",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "InteractCancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
